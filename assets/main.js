@@ -29,34 +29,58 @@ Ricordate, molte cose nella vita se fatte per la prima volta risultano difficili
 
 /* prompt numero km */
 
-const customerName = prompt ('Inserisci il tuo nome e cognome')
+document.getElementById("generate").addEventListener("click", function(){
+    const userName = document.getElementById("firstName").value;
+    const numberKm = document.getElementById("Km").value;
+    const customerAge = document.getElementById("Age").value;
+    console.log(userName, numberKm, customerAge);
+    const noDiscountPrice = (numberKm * 0.21).toFixed (2)
+    const discount_40 = (noDiscountPrice * 40 / 100 )
+    const totalDiscount_40 = (noDiscountPrice - discount_40).toFixed (2) 
+    const discount_20 = (noDiscountPrice * 20 / 100 )
+    const totalDiscount_20 = (noDiscountPrice - discount_20).toFixed (2)  
+    if (customerAge > 65) {
 
-const numberKm = Number (prompt ('Quanti km desideri percorrere?'));
+        console.log('complimenti, hai diritto a uno sconto del 40%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_40 + '$' );
+    } else if (customerAge < 18) {
+        console.log('complimenti, hai diritto a uno sconto del 20%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_20 + '$' );
+    } else {
+        console.log('Il prezzo finale del tuo biglietto è di ' + noDiscountPrice + '$');
+    } 
+    document.getElementById("firstName").innerHTML = userName
+    document.getElementById("Km").innerHTML = numberKm
+    document.getElementById("Age").innerHTML = customerAge
+
+})
+
+
+
+/* const numberKm = Number (prompt ('Quanti km desideri percorrere?'));
 
 if (isNaN (numberKm)) {
     alert('Scrivi gentilmente in caratteri numerici');
     location.reload();
-}
+} */
 
 /* prompt età */
 
-const customerAge = Number (prompt ('Quanti anni hai?'));
+/* const customerAge = Number (prompt ('Quanti anni hai?'));
 
 if (isNaN (customerAge)) {
     alert('Scrivi gentilmente in caratteri numerici');
     location.reload();
 }
-
+ */
 
 /* valore biglietto senza sconti */
 
-const noDiscountPrice = (numberKm * 0.21).toFixed (2)
+/* const noDiscountPrice = (numberKm * 0.21).toFixed (2)
 
 console.log(noDiscountPrice);
-
+ */
 /* determino se ha più di 65 anni o meno di 18 anni */
 
-const discount_40 = (noDiscountPrice * 40 / 100 )
+/* const discount_40 = (noDiscountPrice * 40 / 100 )
 
 const totalDiscount_40 = (noDiscountPrice - discount_40).toFixed (2)
 
@@ -71,5 +95,5 @@ if (customerAge > 65) {
     console.log('complimenti, hai diritto a uno sconto del 20%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_20 + '$' );
 } else {
     console.log('Il prezzo finale del tuo biglietto è di ' + noDiscountPrice + '$');
-}
+} */
 
