@@ -47,9 +47,10 @@ document.getElementById("generate").addEventListener("click", function(){
     } else {
         console.log('Il prezzo finale del tuo biglietto è di ' + noDiscountPrice + '$');
     } 
-    document.getElementById("firstName").innerHTML = userName
+    document.getElementById("customer").innerHTML = userName
     document.getElementById("Km").innerHTML = numberKm
     document.getElementById("Age").innerHTML = customerAge
+    document.getElementById("ticketPrice").innerHTML = totalDiscount_20
 
 })
 
