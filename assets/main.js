@@ -72,3 +72,4 @@ if (customerAge > 65) {
 } else {
     console.log('Il prezzo finale del tuo biglietto è di ' + noDiscountPrice + '$');
 }
+
