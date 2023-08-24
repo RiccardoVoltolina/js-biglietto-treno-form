@@ -7,6 +7,75 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <main>
+        <!-- calcola il prezzo del biglietto -->
+        <section>
+            <h1 class="text_center pt_2">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="container">
+                <div class="row justy_center pt_2">
+                    <div class="col_4 justy_center align_center d_flex direction_column">
+                        <h4>Nome e Cognome</h4>
+                        <input type="text" id="name" value="">
+                    </div>
+                    <div class="col_4 justy_center align_center d_flex direction_column">
+                        <h4>Km da percorrere</h4>
+                        <input type="text" id="name" value="">
+                    </div>
+                    <div class="col_4 justy_center align_center d_flex direction_column">
+                        <h4>Fascia di età</h4>
+                        <select name="Age" id="Age">
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Minorenne">Minorenne</option>
+                        </select>  
+                    </div>              
+                </div>
+                <div class="text_center">
+                    <button class="mr_1">Genera</button>
+                    <button class="ml_1">Annulla</button>
+                </div>
+            </div>
+        </section>
+        <!-- il tuo biglietto -->    
+        <section>
+            <h1 class="text_center pt_2">IL TUO BIGLIETTO</h1>
+            <div class="container pb_1">
+                <div class="container_ticket_info">
+                    <h2>DETTAGLIO PASSEGGERI</h2>
+                    <div class="row">
+                        <div class="col_5 p_1">
+                            <h2>NOME PASSEGGERO</h2>
+                            <div>Riky volto</div>
+
+                        </div>
+                        <div class="col_7">
+                            <div class="row pt_1 space_evenly border">
+                                <div class="col_3">
+                                    <h4 class="pb_4">Offerta</h4>
+                                    <div class="pb_1">Biglietto standard</div>
+
+                                </div>
+                                <div class="col_3">
+                                    <h4 class="pb_4">Carrozza</h4>
+                                    <div>5</div>
+                                </div>
+                                <div class="col_3">
+                                    <h4 class="pb_4">Codice CP</h4>
+                                    <div>92911</div>
+                                </div>
+                                <div class="col_3">
+                                    <h4 class="pb_4">Costo biglietto</h4>
+                                    <div>2.11</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
     <script src="./assets/main.js"></script>
 </body>
 </html>

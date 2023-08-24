@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+/* utilities */
+
+.text_center {
+    text-align: center;
+}
+
+.justy_center {
+    justify-content: center;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.space_evenly {
+    justify-content: space-evenly;
+}
+
+.row {
+    display: flex;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.direction_column {
+    flex-direction: column;
+}
+
+.ml_1 {
+    margin-left: 1rem;
+}
+
+.mr_1 {
+    margin-right: 1rem;
+}
+
+.pt_1 {
+    padding-top: 1rem;
+}
+
+.p_1 {
+    padding: 1rem;
+}
+
+.pb_1 {
+    padding-bottom: 1rem;
+}
+
+.pt_2 {
+    padding-top: 2rem;
+}
+
+.pb_4 {
+    padding-bottom: 4rem;
+}
+
+/* prezzo del biglietto */
+
+section h1 {
+    padding-bottom: 1rem;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+    max-width: 1120px;
+    background-color: white;
+}
+
+
+.col_4 {
+    width: calc(100% / 4 - 2rem);
+    border: 1px solid white;
+}
+
+button {
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+section h4 {
+    padding-bottom: 1rem;
+}
+
+/* il tuo biglietto */
+
+.container_ticket_info {
+    width: 90%;
+    margin: auto;
+    max-width: 1120px;
+    background-color: white;
+}
+
+.col_5 {
+    width: 40%;
+    background-color: gray;
+}
+
+.col_7 {
+    width: 60%;
+}
+
+.col_3 {
+    width: calc(100% / 4 - 1rem);
+}
+
+.border {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}

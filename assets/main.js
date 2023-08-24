@@ -29,6 +29,8 @@ Ricordate, molte cose nella vita se fatte per la prima volta risultano difficili
 
 /* prompt numero km */
 
+const customerName = prompt ('Inserisci il tuo nome e cognome')
+
 const numberKm = Number (prompt ('Quanti km desideri percorrere?'));
 
 if (isNaN (numberKm)) {
