@@ -49,7 +49,6 @@ document.getElementById("generate").addEventListener("click", function(){
     } 
     document.getElementById("customer").innerHTML = userName
     document.getElementById("Km").innerHTML = numberKm
-    document.getElementById("Age").innerHTML = customerAge
     document.getElementById("ticketPrice").innerHTML = totalDiscount_20
 
 })
